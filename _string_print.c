@@ -14,11 +14,10 @@ int _string_print(char *string)
 	if (string == NULL)
 		string = "(null)";
 
-	else
-	{
+
 
 	for(i = 0; string[i]; i++)
 		_putchar(string[i]);
-	}
+	
 	return(i);
 }
