@@ -1,7 +1,8 @@
 #include "holberton.h"
+
 /**
  * _rot13 - prints the rot13'ed string
- * @rot: list
+ * @s: string
  * Return: int
  */
 
@@ -22,12 +23,12 @@ int _rot13(char *s)
 				counter++;
 				break;
 			}
-			if(s[i] == '\0')
+			if (s[i] == '\0')
 			{
 				_putchar(s[i]);
 				counter++;
 			}
 		}
 			}
-	return(counter);
+	return (counter);
 }
