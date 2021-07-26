@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * nbr_size - counts length returned
+ * @n: int to be printed
+ *
+ * Return: number of ints printed
+ */
+
 int nbr_size(int n)
 {
 	int counter = 1;
@@ -17,7 +24,7 @@ int nbr_size(int n)
  * _num_print - prints digits
  * @n: integer to be printed
  *
- * Return: n
+ * Return: nbr of ints to be printed
  */
 
 int _num_print(int n)
