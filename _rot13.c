@@ -7,7 +7,7 @@
 
 int _rot13(char *s)
 {
-	int i, j, counter;
+	int i, j, counter = 0;
 
 	char letters[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[53] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
