@@ -52,6 +52,9 @@ int _printf(const char *format, ...)
 			case 'd':
 				counter += _num_print(va_arg(list, int));
 				break;
+			case 'i':
+				counter += _num_print(va_arg(list, int));
+				break;
 			case '\n':
 								_putchar(10);
 				break;
