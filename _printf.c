@@ -55,6 +55,8 @@ int _printf(const char *format, ...)
 			case '\n':
 								_putchar(10);
 				break;
+			default:
+				counter += _putchar(va_arg(list, int));
 			}
 			ck = 0;
 		}

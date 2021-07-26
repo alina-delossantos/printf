@@ -11,11 +11,13 @@ int _string_print(char *string)
 {
 	int i;
 
-	if (string != NULL)
-	{
+	if (string == NULL)
+		string = "(null)";
 
-	for(i = 0; string[i] != '\0'; i++)
+
+
+	for(i = 0; string[i]; i++)
 		_putchar(string[i]);
-	}
+	
 	return(i);
 }
