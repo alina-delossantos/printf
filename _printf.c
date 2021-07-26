@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * printf - produces output according to a format
+ * _printf - produces output according to a format
  * @format: character string
  *
  * Return: number of characters printed
@@ -10,15 +10,14 @@
 int _printf(const char *format, ...)
 {
 	va_list list;
-	int i;
-	int ck = 0, counter = 0;
+	int i, ck = 0, counter = 0;
 
 	if (format)
 	{
 		va_start(list, format);
-	for(i = 0; format[i] ; i++)
+	for (i = 0; format[i] != '\0' ; i++)
 	{
-		if(!ck)
+		if (!ck)
 		{
 			if (format[i] != '%')
 			{
@@ -29,7 +28,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			switch(format[i])
+			switch (format[i])
 			{
 			case 'c':
 				counter += _putchar(va_arg(list, int));
@@ -52,5 +51,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 	}
-	return(i);
+	return (counter);
 }
