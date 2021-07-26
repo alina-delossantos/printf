@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	int i, ck = 0, counter = 0;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return(-1);
+		return (-1);
 
 		va_start(list, format);
 	for (i = 0; format[i] != '\0' ; i++)
@@ -25,19 +25,15 @@ int _printf(const char *format, ...)
 				counter += _putchar(format[i]);
 				}
 
-			else if (format [i + 1] == '\0')
-				return(-1);
-			/*else if (format [i + 1] == '%')
+			else if (format[i + 1] == '\0')
 			{
-				_putchar(format[i]);
-				counter++;
-				i++;
-				}*/
+				return (-1);
+			}
 			else
 				ck = 1;
 		}
 		else
-		{
+			     {
 			switch (format[i])
 			{
 			case 'c':
@@ -57,6 +53,9 @@ int _printf(const char *format, ...)
 				break;
 			case '\n':
 								_putchar(10);
+				break;
+			case 'R':
+				counter += _rot13(va_arg(list, int));
 				break;
 			default:
 				counter += _putchar('%');
