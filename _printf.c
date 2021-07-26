@@ -23,16 +23,16 @@ int _printf(const char *format, ...)
 			if (format[i] != '%')
 			{
 				counter += _putchar(format[i]);
-			}
+				}
 
 			else if (format [i + 1] == '\0')
 				return(-1);
-			else if (format [i + 1] == '%')
+			/*else if (format [i + 1] == '%')
 			{
 				_putchar(format[i]);
 				counter++;
 				i++;
-			}
+				}*/
 			else
 				ck = 1;
 		}
@@ -59,7 +59,8 @@ int _printf(const char *format, ...)
 								_putchar(10);
 				break;
 			default:
-				counter += _putchar(va_arg(list, int));
+				counter += _putchar('%');
+				counter += _putchar(format[i]);
 			}
 			ck = 0;
 		}
