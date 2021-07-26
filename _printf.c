@@ -12,8 +12,9 @@ int _printf(const char *format, ...)
 	va_list list;
 	int i, ck = 0, counter = 0;
 
-	if (format)
-	{
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return(-1);
+
 		va_start(list, format);
 	for (i = 0; format[i] != '\0' ; i++)
 	{
@@ -22,6 +23,15 @@ int _printf(const char *format, ...)
 			if (format[i] != '%')
 			{
 				counter += _putchar(format[i]);
+			}
+
+			else if (format [i + 1] == '\0')
+				return(-1);
+			else if (format [i + 1] == '%')
+			{
+				_putchar(format[i]);
+				counter++;
+				i++;
 			}
 			else
 				ck = 1;
@@ -48,7 +58,6 @@ int _printf(const char *format, ...)
 			}
 			ck = 0;
 		}
-	}
 	va_end(list);
 	}
 	return (counter);
