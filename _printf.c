@@ -55,7 +55,7 @@ int _printf(const char *format, ...)
 								_putchar(10);
 				break;
 			case 'R':
-				counter += _rot13(va_arg(list, int));
+				counter += _rot13(va_arg(list, char*));
 				break;
 			default:
 				counter += _putchar('%');
