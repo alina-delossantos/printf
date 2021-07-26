@@ -1,5 +1,18 @@
 #include "holberton.h"
 
+int nbr_size(int n)
+{
+	int counter = 1;
+
+	if (n < 0)
+	{
+		counter++;
+	}
+	for(; (n / 10) != 0; counter++)
+		n = n / 10;
+	return(counter);
+}
+
 /**
  * _num_print - prints digits
  * @n: integer to be printed
@@ -9,21 +22,24 @@
 
 int _num_print(int n)
 {
-	unsigned int num = n;
-	int counter;
+	unsigned int nbr;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		num *= -1;
+		nbr = n * (-1);
 	}
-	if (num / 10)
-	{
-		_num_print(num / 10);
-	}
-	if (num == 0)
-		_putchar('0');
 	else
-		counter = _putchar((num % 10) + '0');
-	return(counter);
+	{
+		nbr = n;
+	}
+	if ((nbr / 10) != 0)
+	{
+
+		_num_print(nbr/10);
+	}
+	_putchar((nbr % 10) + '0');
+
+	return(nbr_size(n));
+
 }
