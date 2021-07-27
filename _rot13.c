@@ -16,8 +16,8 @@ int _rot13(char *s)
 
 	aux = s;
 
-	if (aux == NULL)
-		aux = "(ahyy)";
+	if (!aux)
+		aux = "null";
 
 	for (i = 0; aux[i]; i++)
 	{
