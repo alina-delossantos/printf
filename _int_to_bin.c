@@ -6,7 +6,7 @@
  *
  * Return: size
  */
-int _int_to_bin(unsigned int n)
+int _int_to_bin(int n)
 {
 	int count = 0;
 
