@@ -54,7 +54,7 @@ int _printf(const char *format, ...)
 			case 'R':
 				counter += _rot13(va_arg(list, char*));
 				break;
-			case 'r':
+				case 'r':
 				counter += _rev_string(va_arg(list, char*));
 				break;
 			case 'b':

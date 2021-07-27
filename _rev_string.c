@@ -27,7 +27,7 @@ int _strlen(char *s)
  * Return: void
  */
 
-int rev_string(char *s)
+int _rev_string(char *s)
 {
 	int l, i;
 	char *begin_ptr, *end_ptr, ch;
