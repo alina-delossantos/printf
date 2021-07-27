@@ -24,7 +24,7 @@ Specifier characters at the end define the type and the interpretation of its co
 | `c`        | character       | x        |
 | `s`        | string          | hello    |
 | `d` or `i` | Signed integer  | 7, -7    |
-| 'R'        | Rot translation | qPbqr    |
+| `R`        | Rot translation | qPbqr    |
 
 <h2>Functions and Files: :card_file_box:</h2>
 
@@ -43,7 +43,7 @@ Specifier characters at the end define the type and the interpretation of its co
 This function does not handle flag characters, field width, precision nor length modifiers.
 <br>
 <br>
-<h1>Authors :trollface:</h1>
+<h1>Authors :writing_hand:</h1>
 
 :angel: [Alina de los Santos](https://github.com/alina-delossantos) :angel: and :smiling_imp:[Andres Ortiz](https://github.com/Aortiz91) :smiling_imp:
 
