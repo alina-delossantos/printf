@@ -1,9 +1,12 @@
 #include "holberton.h"
+
 /**
  * _printf - produces output according to a format
  * @format: character string
+ *
  * Return: number of characters printed
  */
+
 int _printf(const char *format, ...)
 {
 	va_list list;
@@ -30,7 +33,7 @@ int _printf(const char *format, ...)
 				ck = 1;
 		}
 		else
-			{
+			     {
 			switch (format[i])
 			{
 			case 'c':
