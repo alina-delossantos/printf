@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * nbr_size - counts size returned
  * @n: int to be printed
