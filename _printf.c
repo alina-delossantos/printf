@@ -55,7 +55,7 @@ int _printf(const char *format, ...)
 								_putchar(10);
 				break;
 			case 'b':
-				counter += _int_to_bin(va_arg(list, int));
+				counter += _int_bin(va_arg(list, int));
 				break;
 			case 'R':
 				counter += _rot13(va_arg(list, char*));
