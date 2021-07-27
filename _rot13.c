@@ -13,6 +13,7 @@ int _rot13(char *s)
 	char letters[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[53] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
+
 	if (s == NULL)
 		s = "(null)";
 
