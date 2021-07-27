@@ -45,5 +45,5 @@ This function does not handle flag characters, field width, precision nor length
 <br>
 <h1>Authors :trollface:</h1>
 
-:godmode: Alina de los Santos and Andres Ortiz :godmode:
+:angel: [Alina de los Santos](https://github.com/alina-delossantos) :angel: and :smiling_imp:[Andres Ortiz](https://github.com/Aortiz91) :smiling_imp:
 
