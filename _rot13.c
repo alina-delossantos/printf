@@ -29,7 +29,7 @@ int _rot13(char *s)
 				counter++;
 				break;
 			}
-			if (aux[i] == '\0')
+			if (letters[j] == '\0')
 			{
 				_putchar(aux[i]);
 				counter++;
