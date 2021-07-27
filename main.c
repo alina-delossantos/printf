@@ -292,7 +292,7 @@ int main(void)
 	a = printf("%r", "reverse my string");
 	printf("\nobtained: ");
 	fflush(stdout);
-	b = _printf("r", "reverse my string");
+	b = _printf("%r", "reverse my string");
 	cont = cont + output(a,b);
 	printf("\n===============\n");
 	if (cont == 0)
