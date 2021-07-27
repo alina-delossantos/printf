@@ -9,29 +9,27 @@
 int _rot13(char *s)
 {
 	int i, j, counter = 0;
-	char *aux;
 
 	char letters[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[53] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	aux = s;
 
-	if (!aux)
-		aux = "null";
+	if (s == NULL)
+		aux = "(null)";
 
-	for (i = 0; aux[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; letters[j]; j++)
+		for (j = 0; j <= 51; j++)
 		{
-			if (aux[i] == letters[j])
+			if (s[i] == letters[j])
 			{
 				_putchar(rot13[j]);
 				counter++;
 				break;
 			}
-			if (!letters[j])
+			if (s[i] == '\0')
 			{
-				_putchar(aux[i]);
+				_putchar(s[i]);
 				counter++;
 			}
 		}
