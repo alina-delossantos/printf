@@ -12,7 +12,7 @@ int _num_print(int n);
 int nbr_size(int n);
 int _rot13(char *s);
 int _int_to_bin(unsigned int n);
-int print_rev(char *s);
+int _rev_string(char *s);
 int _strlen(char *s);
 
 #endif
