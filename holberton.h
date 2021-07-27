@@ -12,6 +12,6 @@ int _num_print(int n);
 int nbr_size(int n);
 int num_size(int n);
 int _rot13(char *s);
-int _int_to_bin(unsigned int n);
+//int _int_to_bin(unsigned int n);
 
 #endif
