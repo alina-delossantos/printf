@@ -17,11 +17,11 @@ int _rot13(char *s)
 	aux = s;
 
 	if (aux == NULL)
-		aux = "null";
+		aux = "(null)";
 
 	for (i = 0; aux[i]; i++)
 	{
-		for (j = 0; j <= 51; j++)
+		for (j = 0; letters[j]; j++)
 		{
 			if (aux[i] == letters[j])
 			{
