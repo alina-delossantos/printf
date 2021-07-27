@@ -10,6 +10,7 @@ int _printf(const char *format, ...);
 int _string_print(char *string);
 int _num_print(int n);
 int nbr_size(int n);
+int num_size(int n);
 int _rot13(char *s);
 int _int_to_bin(unsigned int n);
 int _rev_string(char *s);
