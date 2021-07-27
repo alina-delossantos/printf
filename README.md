@@ -36,7 +36,7 @@ Specifier characters at the end define the type and the interpretation of its co
 | `_num_print.c` | custom functions to print integers |
 | `_rot13.c`    | custom function to print a rot13'ed string |
 | `_putchar.c` | prints single characters |
-| `man_3_printf.gz` | man page |
+| `man_3_printf` | man page |
 
 
 <h1>Notes :books:</h1>
