@@ -6,7 +6,7 @@
  *
  * Return: size
  */
-void _int_bin(int n)
+void _int_bin(unsigned int n)
 {
 /*	int counter = 0;
 */
