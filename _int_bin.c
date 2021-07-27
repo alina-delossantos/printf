@@ -6,22 +6,21 @@
  *
  * Return: size
  */
-int _int_bin(int n)
+void _int_bin(int n)
 {
-	int counter = 0;
-
+/*	int counter = 0;
+*/
 	if ((n % 2) == 0)
 	{
 		_putchar(0);
-		counter += 1;
-	}
+/*		counter += 1;
+*/	}
 	else
 	{
 		_putchar (1);
-		counter += 1;
-	}
+/*		counter += 1;
+*/	}
 	if ((n / 2) != 0)
 		_int_bin(n / 2);
-	else
-	return (counter);
+return;
 }
