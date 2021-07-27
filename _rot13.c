@@ -14,7 +14,7 @@ int _rot13(char *s)
 	char rot13[53] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	if (s == NULL)
-		s = "(null)";
+		s = "(ahyy)";
 
 	for (i = 0; s[i]; i++)
 	{
