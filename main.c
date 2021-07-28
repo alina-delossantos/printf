@@ -287,13 +287,6 @@ int main(void)
 	b = _printf("%d %d", INT_MIN + 34, INT_MAX - 33);
 	cont = cont + output(a,b);
 	printf("\n---------------\n");
-	printf("Test 31");
-	printf("\nexpected: ");
-	a = printf("%r", "reverse my string");
-	printf("\nobtained: ");
-	fflush(stdout);
-	b = _printf("%r", "reverse my string");
-	cont = cont + output(a,b);
 	printf("\n===============\n");
 	if (cont == 0)
 	{
