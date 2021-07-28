@@ -11,6 +11,5 @@ int _string_print(char *string);
 int _num_print(int n);
 int nbr_size(int n);
 int _rot13(char *s);
-int _int_bin(int n);
 
 #endif
